@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS18 [get_ports {gpio_rtl_0_tri_io[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gpio_rtl_0_tri_io[0]}]
+set_property PACKAGE_PIN H12 [get_ports {gpio_rtl_0_tri_io[1]}]
+set_property PACKAGE_PIN H13 [get_ports {gpio_rtl_0_tri_io[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gpio_rtl_1_tri_io[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {gpio_rtl_1_tri_io[0]}]
+set_property PACKAGE_PIN F13 [get_ports {gpio_rtl_1_tri_io[1]}]
+set_property PACKAGE_PIN E13 [get_ports {gpio_rtl_1_tri_io[0]}]
