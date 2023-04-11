@@ -483,43 +483,56 @@ uint8_t PS_GPIO_ReadPin(uint8_t GPIO_Num)
 
 ![image-20230403215400184](https://imagebed.krins.cloud/api/image/42R4Z824.png)
 
-# 2 常见报错
+## 1.3 Vitis 联合 VSC 编程
 
-## 2.1 Vivado
+Vitis 在编写代码时需要通过快捷键 `Alt+?` 启用代码提示，使用体验非常差。为此下面介绍如何使用 VS Code 编写代码，效果如下
 
-### BD 41-2088
+![image-20230410190817661](https://imagebed.krins.cloud/api/image/206J0280.png)
 
-![image-20230404111301390](https://imagebed.krins.cloud/api/image/ND42T002.png)
+首先在 VS Code 中打开 Vitis 项目文件夹
 
-**解决方法**
+![image-20230410191019364](https://imagebed.krins.cloud/api/image/XPTV2P20.png)
 
-Project Settings > Edit
+点击报错部分 > 快捷键 `Alt + Enter` > 编辑 "includePath" 设置
 
-![image-20230404111348587](https://imagebed.krins.cloud/api/image/08JVD24Z.png)
+![image-20230410191102942](https://imagebed.krins.cloud/api/image/D2X06R88.png)
 
-取消勾选 Project is an extensible Vitis platform 
+此时 VS Code 会在项目根路径下生成 .vscode 配置文件夹，我们需要在 `c_cpp_properties.json` 文件中添加头文件路径。其中`${default}` 代表 C/C++ 插件全局配置中设置的 Include，我们还需要添加该项目需要的头文件
 
-![image-20230404111408585](https://imagebed.krins.cloud/api/image/B2866HPJ.png)
+![image-20230410191433165](https://imagebed.krins.cloud/api/image/088FXD8H.png)
 
-## 2.2 Vitis
+Vitis 项目依赖的头文件均在平台工程 (Platform Project) `system_wrapper` 中，由上图可知 `system_wrapper` 和 应用工程 (Application Project) `gpio_axi_system` 文件夹平级，因此添加头文件路径如下 (xxx/** 会自动遍历 xxx 文件夹下的所有子文件和子文件夹) 
 
-### Error launching program
+![image-20230410192010691](https://imagebed.krins.cloud/api/image/0P0JNF0P.png)
 
-![image-20230403175317276](https://imagebed.krins.cloud/api/image/0ZJH8N4R.png)
+此时按住 Ctrl 并用鼠标点击变量、函数名等已可以查看其定义，但仍然会有红色波浪线报错
 
-**解决方法**
+![image-20230410192241871](https://imagebed.krins.cloud/api/image/42V2T4ZV.png)
 
-Run > Run Configurations > Target Setup，取消勾选 `Reset entire system`
+在 .vscode 文件夹下创建 settings.json 配置文件，并添加如下内容
 
-![image-20230403175512217](https://imagebed.krins.cloud/api/image/BHX084B4.png)
+```json
+{
+    "C_Cpp.intelliSenseEngineFallback": "disabled",
+    "C_Cpp.intelliSenseEngine": "Tag Parser"
+}
+```
 
-### Failed to create platform for application project
+红色波浪线报错消失，开始用 VS Code 愉快地编程吧！
 
-![image-20230404194036748](https://imagebed.krins.cloud/api/image/64VZLXNJ.png)
+![image-20230410192449792](https://imagebed.krins.cloud/api/image/0X6D4482.png)
 
-**解决方法**
+# 2 GPIO
 
-重新创建 Vivado 项目并导出 xsa 即可
+## 2.1 直接操纵
+
+## 2.2 通过 AXI 总线操纵
+
+# 3 自定义 IP 核
+
+## 3.1 创建带有 AXI-Lite 接口的自定义 IP 核
+
+## 3.2 接口封装
 
 # 参考文献
 

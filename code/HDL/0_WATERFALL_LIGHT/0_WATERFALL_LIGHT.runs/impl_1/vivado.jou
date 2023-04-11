@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 11 16:25:35 2023
+# Process ID: 28596
+# Current directory: E:/Project/ZynqLearning/code/HDL/0_WATERFALL_LIGHT/0_WATERFALL_LIGHT.runs/impl_1
+# Command line: vivado.exe -log waterfall_light.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source waterfall_light.tcl -notrace
+# Log file: E:/Project/ZynqLearning/code/HDL/0_WATERFALL_LIGHT/0_WATERFALL_LIGHT.runs/impl_1/waterfall_light.vdi
+# Journal file: E:/Project/ZynqLearning/code/HDL/0_WATERFALL_LIGHT/0_WATERFALL_LIGHT.runs/impl_1\vivado.jou
+# Running On: JingDevice, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 17005 MB
+#-----------------------------------------------------------
+source waterfall_light.tcl -notrace
