@@ -1,16 +1,18 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Jing
 // 
 // Create Date: 2023/04/11 15:51:01
 // Design Name: 
 // Module Name: waterfall_light
 // Project Name: 
-// Target Devices: 
-// Tool Versions: 
+// Target Devices: MZ7035FD 
+// Tool Versions: 2022.1
 // Description: 
-// 
+// 一个带有使能、复位及流水速度可调节的闪烁灯模块。rst_n 下降沿或低电平时模块复位，LED 熄灭；enable 使能后 
+// LED 开始闪烁，否则恒为熄灭状态；speed 用以调节闪烁周期，speed 为 0 时闪烁周期为 2000ms，speed 为 255
+// 时闪烁周期为 200 ms，其余闪烁速度随 speed 的增加线性递增。
 // Dependencies: 
 // 
 // Revision:

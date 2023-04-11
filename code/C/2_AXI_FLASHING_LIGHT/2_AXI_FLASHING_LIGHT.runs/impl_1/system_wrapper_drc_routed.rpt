@@ -1,0 +1,208 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Wed Apr 12 00:30:45 2023
+| Host         : JingDevice running 64-bit major release  (build 9200)
+| Command      : report_drc -file system_wrapper_drc_routed.rpt -pb system_wrapper_drc_routed.pb -rpx system_wrapper_drc_routed.rpx
+| Design       : system_wrapper
+| Device       : xc7z035ffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 34
++----------+----------+------------------------+------------+
+| Rule     | Severity | Description            | Violations |
++----------+----------+------------------------+------------+
+| DPOP-1   | Warning  | PREG Output pipelining | 1          |
+| DPOP-2   | Warning  | MREG Output pipelining | 1          |
+| PDRC-153 | Warning  | Gated clock check      | 32         |
++----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP system_i/flashing_light_0/inst/flashing_light/cnt1 output system_i/flashing_light_0/inst/flashing_light/cnt1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP system_i/flashing_light_0/inst/flashing_light/cnt1 multiplier stage system_i/flashing_light_0/inst/flashing_light/cnt1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[0]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[10]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[11]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[12]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[12]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[13]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[13]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[14]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[14]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[15]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[15]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[16]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[16]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[17]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[17]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[18]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[18]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[19]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[19]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[1]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[20]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[20]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[21]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[21]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[22]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[22]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[23]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[23]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[24]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[24]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[25]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[25]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[26]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[26]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[27]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[27]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[28]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[28]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[29]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[29]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[2]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[30]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[30]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[31]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[31]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[3]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[4]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[5]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[6]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[7]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[8]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net system_i/flashing_light_0/inst/flashing_light/cnt_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin system_i/flashing_light_0/inst/flashing_light/cnt_reg[9]_LDC_i_1/O, cell system_i/flashing_light_0/inst/flashing_light/cnt_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

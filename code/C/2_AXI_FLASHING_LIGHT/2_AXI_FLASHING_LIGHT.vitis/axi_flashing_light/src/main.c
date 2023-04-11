@@ -1,0 +1,16 @@
+#include "sleep.h"
+#include "flashing_light.h"
+
+int main()
+{
+    while (1)
+    {
+        SetFlashState(FLASHING_ENABLE, 0);
+        sleep(10);
+        SetFlashState(FLASHING_ENABLE, 255);
+        sleep(10);
+        SetFlashState(FLASHING_DISABLE, 0);
+        sleep(10);
+    }
+    return 0;
+}

@@ -337,3 +337,178 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 
 Phase 1 Build RT Design
 Checksum: PlaceDB: c7b311b7 ConstDB: 0 ShapeSum: 18d1dc RouteDB: 0
+Post Restoration Checksum: NetGraph: 86a1bc6a NumContArr: a1a6327e Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 12847eee8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:58 . Memory (MB): peak = 2510.430 ; gain = 218.285
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 12847eee8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:58 . Memory (MB): peak = 2519.246 ; gain = 227.102
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 12847eee8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:58 . Memory (MB): peak = 2519.246 ; gain = 227.102
+ Number of Nodes with overlaps = 0
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 299
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 299
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 12db76aa1
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 12db76aa1
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+Phase 3 Initial Routing | Checksum: 1400a331b
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+Phase 4 Rip-up And Reroute | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+Phase 6 Post Hold Fix | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00854735 %
+  Global Horizontal Routing Utilization  = 0.0124451 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 18.018%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 13.5135%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 16.1765%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 35.2941%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 9e0ccfaa
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: a5be4ea9
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:59 . Memory (MB): peak = 2566.777 ; gain = 274.633
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+61 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:16 ; elapsed = 00:02:01 . Memory (MB): peak = 2566.777 ; gain = 283.773
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 2568.117 ; gain = 1.340
+INFO: [Common 17-1381] The checkpoint 'E:/Project/ZynqLearning/code/HDL/0_WATERFALL_LIGHT/0_WATERFALL_LIGHT.runs/impl_1/waterfall_light_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file waterfall_light_drc_routed.rpt -pb waterfall_light_drc_routed.pb -rpx waterfall_light_drc_routed.rpx
+Command: report_drc -file waterfall_light_drc_routed.rpt -pb waterfall_light_drc_routed.pb -rpx waterfall_light_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/Project/ZynqLearning/code/HDL/0_WATERFALL_LIGHT/0_WATERFALL_LIGHT.runs/impl_1/waterfall_light_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file waterfall_light_methodology_drc_routed.rpt -pb waterfall_light_methodology_drc_routed.pb -rpx waterfall_light_methodology_drc_routed.rpx
+Command: report_methodology -file waterfall_light_methodology_drc_routed.rpt -pb waterfall_light_methodology_drc_routed.pb -rpx waterfall_light_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file E:/Project/ZynqLearning/code/HDL/0_WATERFALL_LIGHT/0_WATERFALL_LIGHT.runs/impl_1/waterfall_light_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file waterfall_light_power_routed.rpt -pb waterfall_light_power_summary_routed.pb -rpx waterfall_light_power_routed.rpx
+Command: report_power -file waterfall_light_power_routed.rpt -pb waterfall_light_power_summary_routed.pb -rpx waterfall_light_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design! Power estimation will be inaccurate until this is corrected.
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+72 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file waterfall_light_route_status.rpt -pb waterfall_light_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file waterfall_light_timing_summary_routed.rpt -pb waterfall_light_timing_summary_routed.pb -rpx waterfall_light_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file waterfall_light_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file waterfall_light_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file waterfall_light_bus_skew_routed.rpt -pb waterfall_light_bus_skew_routed.pb -rpx waterfall_light_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 16:28:25 2023...

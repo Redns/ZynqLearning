@@ -1,0 +1,84 @@
+22:52:06 DEBUG : Logs will be stored at 'E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/IDE.log'.
+22:52:12 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\Project\ZynqLearning\code\C\2_AXI_FLASHING_LIGHT\2_AXI_FLASHING_LIGHT.vitis\temp_xsdb_launch_script.tcl
+22:52:16 INFO  : XSCT server has started successfully.
+22:52:16 INFO  : plnx-install-location is set to ''
+22:52:16 INFO  : Successfully done setting XSCT server connection channel  
+22:52:16 INFO  : Successfully done setting workspace for the tool. 
+22:52:20 INFO  : Registering command handlers for Vitis TCF services
+22:52:20 INFO  : Successfully done query RDI_DATADIR 
+22:52:22 INFO  : Platform repository initialization has completed.
+22:53:26 INFO  : Result from executing command 'getProjects': system_wrapper
+22:53:26 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+22:53:28 WARN  : An unexpected exception occurred in the module 'platform project logging'
+22:53:30 INFO  : Platform 'system_wrapper' is added to custom repositories.
+22:53:56 INFO  : Platform 'system_wrapper' is added to custom repositories.
+22:54:38 INFO  : Checking for BSP changes to sync application flags for project 'axi_flashing_light'...
+22:54:38 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;axi_flashing_light;axi_flashing_light_system;system_wrapper
+22:54:38 WARN  : Failed to closehw "E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa"
+Reason: E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+22:54:38 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;axi_flashing_light;axi_flashing_light_system;system_wrapper
+22:54:38 ERROR : Failed to openhw "E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa"
+Reason: E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/system_wrapper/export/system_wrapper/hw/system_wrapper.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+22:54:38 ERROR : Failed to update application flags from BSP for 'axi_flashing_light'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202204140305.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75) [com.xilinx.sdk.managedbuilder_1.0.0.202204140305.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+23:28:59 INFO  : Result from executing command 'getProjects': system_wrapper
+23:28:59 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+23:29:02 INFO  : Platform 'system_wrapper' is added to custom repositories.
+23:29:11 INFO  : Platform 'system_wrapper' is added to custom repositories.
+23:30:02 INFO  : Result from executing command 'getProjects': system_wrapper
+23:30:02 INFO  : Result from executing command 'getPlatforms': system_wrapper|E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm;xilinx_vck190_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+23:32:33 INFO  : Checking for BSP changes to sync application flags for project 'axi_flashing_light'...
+23:33:39 INFO  : Checking for BSP changes to sync application flags for project 'axi_flashing_light'...
+23:40:28 INFO  : Checking for BSP changes to sync application flags for project 'axi_flashing_light'...
+00:33:11 INFO  : Result from executing command 'getProjects': system_wrapper
+00:33:11 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+00:33:12 INFO  : Platform 'system_wrapper' is added to custom repositories.
+00:33:20 INFO  : Platform 'system_wrapper' is added to custom repositories.
+00:39:35 INFO  : Result from executing command 'getProjects': system_wrapper
+00:39:35 INFO  : Result from executing command 'getPlatforms': system_wrapper|E:/Project/ZynqLearning/code/C/2_AXI_FLASHING_LIGHT/2_AXI_FLASHING_LIGHT.vitis/system_wrapper/export/system_wrapper/system_wrapper.xpfm;xilinx_vck190_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|D:/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+00:40:28 INFO  : Checking for BSP changes to sync application flags for project 'axi_flashing_light'...
+00:41:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:42:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:42:13 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.

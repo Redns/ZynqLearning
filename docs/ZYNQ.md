@@ -532,6 +532,11 @@ Vitis 项目依赖的头文件均在平台工程 (Platform Project) `system_wrap
 
 ## 3.1 创建带有 AXI-Lite 接口的自定义 IP 核
 
+- 更新 IP 核后 > Report IP > Upgrade > Generate Output Product > ...
+- 自定义 IP 核 makefile 报错：https://www.taterli.com/8656/
+- 记得写参看文献
+  - https://www.taterli.com/8656/
+
 ## 3.2 接口封装
 
 # 参考文献

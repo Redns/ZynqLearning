@@ -48,6 +48,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Managed_IP"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/flashing_light_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/Waterfall_Light_1.0"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/Key_Control_Led_1.0"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>

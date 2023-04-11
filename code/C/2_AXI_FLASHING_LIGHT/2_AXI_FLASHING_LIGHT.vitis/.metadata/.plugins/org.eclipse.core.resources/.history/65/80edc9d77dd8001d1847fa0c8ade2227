@@ -1,0 +1,9 @@
+#include "sleep.h"
+#include "flashing_light.h"
+
+int main(){
+	while(1){
+
+	}
+	return 0;
+}

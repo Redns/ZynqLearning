@@ -6,7 +6,7 @@
 <Project Version="7" Minor="60" Path="e:/project/zynqlearning/code/c/1_axi_custom_ip/managed_ip_project/managed_ip_project.tmp/waterfall_light_v1_0_project/Waterfall_Light_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="b36e1742bf4b40a1ad15b081f5428594"/>
+    <Option Name="Id" Val="c510cc48a0a54063becbe3a7a6202f93"/>
     <Option Name="Part" Val="xc7z035ffg676-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -107,14 +107,6 @@
       </File>
       <File Path="$PPRDIR/../../../../../../../../Project/ZynqLearning/code/C/1_AXI_CUSTOM_IP/ip_repo/Waterfall_Light_1.0/component.xml">
         <FileInfo SFType="IPXACT"/>
-      </File>
-      <File Path="$PPRDIR/../../../../../../../../Project/ZynqLearning/code/C/1_AXI_CUSTOM_IP/ip_repo/Waterfall_Light_1.0/hdl/waterfall_light.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
